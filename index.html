@@ -25,12 +25,22 @@
 
     <label>Clau privada:</label>
     <textarea id="clavePrivada" readonly></textarea>
+
+    <label>Clau publica de signatura:</label>
+    <textarea id="clavePublicaFirma" readonly></textarea>
+
+    <label>Clau privada de signatura:</label>
+    <textarea id="clavePrivadaFirma" readonly></textarea>
 </section>
 
 <section>
     <h2>Clau publica remota</h2>
 
     <textarea id="claveRemota" placeholder="Introdueix la clau publica de l'altre client"></textarea>
+    <button id="importarClaves">Importar clau publica</button>
+    <label>Clau publica remota de signatura:</label>
+    <textarea id="claveFirmaRemota"></textarea>
+    <button id="importarFirma">Importar clau de signatura</button>
 </section>
 
 <section>
