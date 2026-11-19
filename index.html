@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>    
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Missatges encriptats</title>     
+    <link rel="stylesheet" href="css/style.css">     
+    <script src="js/script.js" defer></script> 
+
+</head>
+
+<body>
+
+<h1>Comunicacio segura</h1>
+
+<section>
+    <h2>Les meves claus</h2>
+
+    <button id="generarClaves">Generar claus</button>
+
+    <label>Clau publica:</label>
+    <textarea id="clavePublica" readonly></textarea>
+
+    <label>Clau privada:</label>
+    <textarea id="clavePrivada" readonly></textarea>
+</section>
+
+<section>
+    <h2>Clau publica remota</h2>
+
+    <textarea id="claveRemota" placeholder="Introdueix la clau publica de l'altre client"></textarea>
+</section>
+
+<section>
+    <h2>Enviar missatge</h2>
+
+    <textarea id="mensaje" placeholder="Escriu el teu missatge"></textarea>
+
+    <button id="firmarMensaje">Signar missatge</button>
+    <button id="encriptarMensaje">Encriptar missatge</button>
+
+    <label>Missatge encriptat:</label>
+    <textarea id="mensajeEncriptado" readonly></textarea>
+</section>
+
+<section>
+    <h2>Rebre missatge</h2>
+
+    <textarea id="mensajeRecibido" placeholder="Introdueix el missatge encriptat"></textarea>
+
+    <button id="desencriptarMensaje">Desencriptar i verificar</button>
+
+    <h3>Missatge desencriptat:</h3>
+    <textarea id="resultado" readonly></textarea>
+
+    <p id="estadoFirma"></p>
+</section>
+
+</body>
+
+</html>
